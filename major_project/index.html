@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>enterprise accessibility control hub</title>
+  </head>
+  <body>
+    <header>
+      <h1>WCAG 2.2 Compliance control hub</h1>
+      <nav aria-label="primary document portal">
+        <a href="#onboarding">1. identity gatway</a>
+        <a href="#preferences">2. system preferences</a>
+        <a href="#metrics">3. compliance metrics</a>
+      </nav>
+    </header>
+    <main>
+    <section id="onboarding">
+      <h2>identity gateway</h2>
+      <p>please enter your credentials to clear the security validation gate.</p>
+      <form action="#" method="POST">
+        <p>
+          <label>full name(requried):
+            <br>
+            <input type="text" placeholder="enter full name" minlength="4" required aria-required="true">
+          </label>
+        </p>
+        <p>
+          <label>email(required):
+            <br>
+            <input type="email" required aria-required="true">
+          </label>
+        </p>
+        <button type="submit">verify identity</button>
+      </form>
+    </section>
+    <section id="preferences">
+      <h2>2.system preferences</h2>
+      <p>
+        configure layout adaption and accessibility switched below:
+      </p>
+      <form action="#" method="POST">
+        <fieldset>
+          <legend>visual contract profile</legend>
+          <p>
+            <input type="radio" id="contrastNormal" name="contrast" value="normal" checked>
+            <label for="contrastNormal">standard interface layout</label>
+          </p>
+          <p>
+            <input type="radio" id="contrastHigh" name="contrast" value="high">
+            <label for="contrastHigh">vision enhancement (WCAG AAA Compliance)</label>
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>hardware adaptations</legend>
+          <p>
+            <input type="checkbox" id="braillept" name="braillept" value="enabled">
+            <label for="braillept">optimize system code for braille display</label>
+          </p>
+        </fieldset>
+          <br>
+          <button type="submit"> save system profiles</button>
+      </form>
+    </section>
+    <section id="metrics">
+      <h2>3. complianace Metrics</h2>
+      <p>this automated data matrix monitors the validation rules applied across the gateway interface layer.</p>
+    <table border="1">
+      <thead>
+        <tr>
+          <th scope="col">rule identifier</th>
+          <th scope="col">target standard</th>
+          <th scope="col">status</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><strong>WCAG-01</strong></td>
+        <td>explicit label association(`for` meeting `id`)</td>
+        <td>verified compliant</td>
+      </tr>
+      <tr>
+        <td><strong>WCAG-02</strong></td>
+        <td>aria-required assistive descriptors</td>
+        <td>verified compliant</td>
+      </tr>
+      <tr>
+         <td><strong>WCAG-03</strong></td>
+        <td>semantic structural layout grouping(`fieldset`)</td>
+        <td>verified compliant</td>
+      </tr>
+      </tbody>
+    </table>
+    </section>
+    <br>
+    <br>
+    </main>
+    <footer>
+      <p> <small>& copy; 2026 enterpise access hub. built to meet strit global accessibility specification</p></small></p>
+    </footer>
+  </body>
+</html>
